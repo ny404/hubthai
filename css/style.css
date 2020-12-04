@@ -1,0 +1,165 @@
+body { font-size: 1em; font-family: 'Roboto', sans-serif; line-height: 1.4em; padding: 0; margin: 0; background: #192739;}
+h1, h2, h3 { font-family: 'Titillium Web', sans-serif; }
+h1 { font-size: 2.5em; line-height: 1.2em;}
+h2 { font-size: 2em; }
+h3 { font-size: 1.6em; }
+a { text-decoration: none; color: #fff; border-bottom: 1px solid;}
+a:hover, a:active, a:focus { color: #F1D302; }
+#test-form { display: inherit; }
+header { 
+	background: url(../images/header-bg2.jpg) no-repeat center center; 
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#currentGame { width: 240px; height: 240px; border-radius: 24px; box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  animation: bob 1s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+#gameTitle { color: #fff; }
+.introduction { text-align: center; color: #fff; }
+
+@keyframes bob {
+  0% {
+    transform: translate(0, -5px);
+	-webkit-transform: translate(0, -5px);
+	-moz-transform: translate(0, -5px);
+	-ms-transform: translate(0, -5px);
+	-o-transform: translate(0, -5px);
+  }
+  100% {
+    transform: translate(0, 5px);
+	-webkit-transform: translate(0, 5px);
+	-moz-transform: translate(0, 5px);
+	-ms-transform: translate(0, 5px);
+	-o-transform: translate(0, 5px);
+  }
+}
+
+main { background: #192739; }
+.sidebar { width: 20%; }
+.content {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+#searchGames { max-width: 1220px; width: 95%; padding: 1%;}
+button { 
+	width: 150px;
+	padding: 15px;
+	border: none;
+	border-radius: 5px;
+	font-size: inherit;
+	cursor: pointer;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    margin: 5% auto;
+    display: block;
+}
+button:hover { opacity: 0.8; }
+.darkmode-toggle {
+	margin: 0 !important;
+	padding: 0 !important
+}
+.darkmode-toggle:hover { opacity: 1; }
+.blue { background: #42bff5; }
+.pink { background: #ff3562; color: #fff; }
+.grey { background: #666; color: #fff; }
+
+.row { 
+	max-width: 1280px;
+	width: auto;
+	margin: auto;
+	padding: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.row:after { content:''; display: table; }
+
+.col-1 { width: 8.33333333%; }
+.col-2 { width: 16.66666667%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33333333%; }
+.col-6 { width: 50%; }
+.col-8 { width: 66.66666667%; }
+.col-12 { width: 100%; }
+
+.game { width: 31%; margin: 1%; color: #fff; transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out; }
+.game:hover { 
+	transform: scale(1.0125);
+	box-shadow:
+		0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+		0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.game h3 { margin-top: 0; color: #79beda;}
+.preview { width: 100%; display: block; }
+.tags { background: #192739; display: inline-block; padding: 2%; margin-right: 5px; font-size: 0.8em; }
+.description {
+	padding: 5%;
+	background: #293341;
+}
+ul { list-style: none; padding: 0; }
+li { line-height: 1.6em; }
+li.release:before {
+	font-family: "FontAwesome";
+	position: relative;
+	content: '\f135';
+	margin-right: 10px;
+}
+li.developer:before {
+	font-family: "FontAwesome";
+	position: relative;
+	right: 1.5px;
+	content: '\f121';
+	margin-right: 6.5px;
+}
+li.publisher:before {
+	font-family: "FontAwesome";
+	position: relative;
+	left: 2px;
+	content: '\f1ad';
+	margin-right: 12px;
+}
+li.website:before {
+	font-family: "FontAwesome";
+	position: relative;
+	left: 1.5px;
+	content: '\f0c1';
+	margin-right: 10.5px;
+}
+i.fas { margin: 0 5px; }
+
+i.fa-windows, i.fa-desktop, i.fa-apple, i.fa-android, i.fa-linux, i.fa-playstation, i.fa-xbox, i.switch { margin: 0 5px; }
+i.switch { background: url(../images/nintendo-switch.png); width: 14px; height: 14px; }
+footer { font-size: 0.8em; font-weight: ; background: #1E2F45; color: #79beda; }
+ul.footer-links { text-align: right; }
+ul.footer-links li { display: inline-block; padding: 0 1em; }
+
+@media screen and (max-width: 767px){
+	#searchGames { height: 25px; width: 97%; }
+	.introduction { padding: 5%; }
+	.row { display: block; }
+	.game { margin: 0; }
+	.game:hover { transform: none; box-shadow: none; }
+	.col-xs { width: 100%; }
+	ul.footer-links { text-align: center; }
+}
