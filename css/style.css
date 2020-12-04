@@ -1,5 +1,5 @@
 body { font-size: 1em; font-family: 'Roboto', sans-serif; line-height: 1.4em; padding: 0; margin: 0; 
-background: url("images/hub-thai-cover.jpg") top center no-repeat #192739;
+background: url('images/hub-thai-cover.jpeg') top center no-repeat #192739;
 background-size: cover;
 }
 h1, h2, h3 { font-family: 'Titillium Web', sans-serif; }
