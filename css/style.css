@@ -1,14 +1,15 @@
-body { font-size: 1em; font-family: 'Roboto', sans-serif; line-height: 1.4em; padding: 0; margin: 0; 
+body { font-size: 1em; font-family: 'Roboto', sans-serif; line-height: 1.6em; padding: 0; margin: 0;
 background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739;
 background-size: cover;
 }
-h1, h2, h3 { font-family: 'Titillium Web', sans-serif; }
+h1, h2, h3 { font-family: 'Titillium Web', sans-serif; margin-top: 0; text-align: center;}
 h1 { font-size: 2.5em; line-height: 1.2em;}
-h2 { font-size: 2em; }
+h2 { font-size: 2em; line-height: 1.2em; }
 h3 { font-size: 1.6em; }
 a { text-decoration: none; color: #fff; border-bottom: 1px solid;}
 a:hover, a:active, a:focus { color: #F1D302; }
 #test-form { display: inherit; }
+.branding { width: 150px; height: 150px; border-radius: 75px; margin: auto; display: block; }
 header { 
 	background: url(../images/header-bg2.jpg) no-repeat center center; 
 	background-size: cover;
@@ -48,15 +49,8 @@ header {
   }
 }
 
-main { background: #192739; }
+main {  }
 .sidebar { width: 20%; }
-.content {
-	width: 80%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-}
 #searchGames { max-width: 1220px; width: 95%; padding: 1%;}
 button { 
 	width: 150px;
@@ -82,17 +76,19 @@ button:hover { opacity: 0.8; }
 .pink { background: #ff3562; color: #fff; }
 .grey { background: #666; color: #fff; }
 
-.row { 
-	max-width: 1280px;
+section { 
+	max-width: 1366px;
 	width: auto;
+	height: 100vh;
 	margin: auto;
-	padding: 2%;
+	/*padding: 2%;*/
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 }
-.row:after { content:''; display: table; }
+section:after { content:''; display: table; }
 
 .col-1 { width: 8.33333333%; }
 .col-2 { width: 16.66666667%; }
@@ -100,6 +96,7 @@ button:hover { opacity: 0.8; }
 .col-4 { width: 33.33333333%; }
 .col-6 { width: 50%; }
 .col-8 { width: 66.66666667%; }
+.col-9 { width: 75%; background: rgba(255,255,255,0.9); }
 .col-12 { width: 100%; }
 
 .game { width: 31%; margin: 1%; color: #fff; transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out; }
@@ -116,9 +113,9 @@ button:hover { opacity: 0.8; }
 .game h3 { margin-top: 0; color: #79beda;}
 .preview { width: 100%; display: block; }
 .tags { background: #192739; display: inline-block; padding: 2%; margin-right: 5px; font-size: 0.8em; }
-.description {
+.content {
 	padding: 5%;
-	background: #293341;
+	/*background: #293341;*/
 }
 ul { list-style: none; padding: 0; }
 li { line-height: 1.6em; }
@@ -160,7 +157,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 @media screen and (max-width: 767px){
 	#searchGames { height: 25px; width: 97%; }
 	.introduction { padding: 5%; }
-	.row { display: block; }
+	/*section { display: block; }*/
 	.game { margin: 0; }
 	.game:hover { transform: none; box-shadow: none; }
 	.col-xs { width: 100%; }
