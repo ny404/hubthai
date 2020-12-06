@@ -1,7 +1,4 @@
-body { font-size: 1em; font-family: 'Roboto', sans-serif; line-height: 1.6em; padding: 0; margin: 0;
-background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739;
-background-size: cover;
-}
+body { font-size: 1em; font-family: 'Roboto', sans-serif; line-height: 1.6em; padding: 0; margin: 0; }
 h1, h2, h3 { font-family: 'Titillium Web', sans-serif; margin-top: 0; text-align: center;}
 h1 { font-size: 2.5em; line-height: 1.2em;}
 h2 { font-size: 2em; line-height: 1.2em; }
@@ -10,6 +7,7 @@ a { text-decoration: none; color: #fff; border-bottom: 1px solid;}
 a:hover, a:active, a:focus { color: #F1D302; }
 #test-form { display: inherit; }
 .branding { width: 150px; height: 150px; border-radius: 75px; margin: auto; display: block; }
+.branding-menu { width: 100%; margin: auto; display: block; }
 header { 
 	background: url(../images/header-bg2.jpg) no-repeat center center; 
 	background-size: cover;
@@ -17,6 +15,32 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+#nav-menu { background: #15632b; font-size: 1.2em; }
+#nav-btn { width: auto; position: fixed; z-index: 500; top: 0; left: 0; font-size: 1.6em; color: #fff; background: #15632b; border-radius: 0; margin: 0; }
+.site-overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+
+    -webkit-transition: visibility 0s ease, opacity .2s ease;
+    -moz-transition: visibility 0s ease, opacity .2s ease;
+    -o-transition: visibility 0s ease, opacity .2s ease;
+    transition: visibility 0s ease, opacity .2s ease;
+}
+.offside-js--is-open .site-overlay {
+    visibility: visible;
+    opacity: .7;
+    -webkit-transition-delay: delay 0s;
+    -o-transition-delay: delay 0s;
+    transition-delay: delay 0s;
 }
 #currentGame { width: 240px; height: 240px; border-radius: 24px; box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -49,7 +73,8 @@ header {
   }
 }
 
-main {  }
+main { background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739;
+background-size: cover; }
 .sidebar { width: 20%; }
 #searchGames { max-width: 1220px; width: 95%; padding: 1%;}
 button { 
@@ -63,7 +88,7 @@ button {
 	transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
-    margin: 5% auto;
+    /*margin: 5% auto;*/
     display: block;
 }
 button:hover { opacity: 0.8; }
@@ -117,8 +142,8 @@ section:after { content:''; display: table; }
 	padding: 5%;
 	/*background: #293341;*/
 }
-ul { list-style: none; padding: 0; }
-li { line-height: 1.6em; }
+ul { list-style: none; padding: 10%; margin: 0; }
+li { line-height: 1.6em; padding: 5%;}
 li.release:before {
 	font-family: "FontAwesome";
 	position: relative;
