@@ -3,9 +3,8 @@ h1, h2, h3 { font-family: 'Titillium Web', sans-serif; margin-top: 0; text-align
 h1 { font-size: 2.5em; line-height: 1.2em;}
 h2 { font-size: 2em; line-height: 1.2em; }
 h3 { font-size: 1.6em; }
-a { text-decoration: none; color: #fff; border-bottom: 1px solid;}
-a:hover, a:active, a:focus { color: #F1D302; }
-#test-form { display: inherit; }
+a { text-decoration: none; color: #fff;}
+a:hover, a:active, a:focus { /*color: #F1D302;*/ border-bottom: 1px solid; }
 .branding { width: 150px; height: 150px; border-radius: 75px; margin: auto; display: block; }
 .branding-menu { width: 100%; margin: auto; display: block; }
 header { 
@@ -16,8 +15,9 @@ header {
 	align-items: center;
 	flex-direction: column;
 }
-#nav-menu { background: #15632b; font-size: 1.2em; }
-#nav-btn { width: auto; position: fixed; z-index: 500; top: 0; left: 0; font-size: 1.6em; color: #fff; background: #15632b; border-radius: 0; margin: 0; }
+#nav-menu { background: #20BF55; font-size: 1.2em; }
+#nav-btn { width: auto; position: fixed; z-index: 500; top: 0; left: 0; font-size: 1.2em; color: #fff; background: #FE5F55; margin: 15px; 
+}
 .site-overlay {
     z-index: 1;
     position: absolute;
@@ -75,8 +75,6 @@ header {
 
 main { background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739;
 background-size: cover; }
-.sidebar { width: 20%; }
-#searchGames { max-width: 1220px; width: 95%; padding: 1%;}
 button { 
 	width: 150px;
 	padding: 15px;
@@ -92,11 +90,7 @@ button {
     display: block;
 }
 button:hover { opacity: 0.8; }
-.darkmode-toggle {
-	margin: 0 !important;
-	padding: 0 !important
-}
-.darkmode-toggle:hover { opacity: 1; }
+
 .blue { background: #42bff5; }
 .pink { background: #ff3562; color: #fff; }
 .grey { background: #666; color: #fff; }
@@ -104,7 +98,7 @@ button:hover { opacity: 0.8; }
 section { 
 	max-width: 1366px;
 	width: auto;
-	height: 100vh;
+	min-height: 100vh;
 	margin: auto;
 	/*padding: 2%;*/
 	display: flex;

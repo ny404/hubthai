@@ -9,7 +9,7 @@
 /* Off-canvas element CSS */
 .offside {
     position: fixed; /* Does not play well with some old browsers (see: README) */
-    width: 200px;
+    width: 300px;
     height: 100%;
     top: 0;
     z-index: 300;
@@ -20,13 +20,13 @@
 /* Left off-canvas elements default status: out of the page */
 .offside,
 .offside--left {
-    left: -200px;
+    left: -300px;
 }
 
 /* Right off-canvas elements default status: out of the page */
 .offside--right {
     left: auto;
-    right: -200px;
+    right: -300px;
 }
 
 /*
@@ -36,11 +36,11 @@
  */
 .offside--left.is-open,
 .offside-js--is-left .offside-sliding-element {
-    -webkit-transform: translate3d(200px, 0, 0);
-    -moz-transform: translate3d(200px, 0, 0);
-    -ms-transform: translate3d(200px, 0, 0);
-    -o-transform: translate3d(200px, 0, 0);
-    transform: translate3d(200px, 0, 0);
+    -webkit-transform: translate3d(300px, 0, 0);
+    -moz-transform: translate3d(300px, 0, 0);
+    -ms-transform: translate3d(300px, 0, 0);
+    -o-transform: translate3d(300px, 0, 0);
+    transform: translate3d(300px, 0, 0);
 }
 
 /*
@@ -50,11 +50,11 @@
  */
 .offside--right.is-open,
 .offside-js--is-right .offside-sliding-element {
-    -webkit-transform: translate3d(-200px, 0, 0);
-    -moz-transform: translate3d(-200px, 0, 0);
-    -ms-transform: translate3d(-200px, 0, 0);
-    -o-transform: translate3d(-200px, 0, 0);
-    transform: translate3d(-200px, 0, 0);
+    -webkit-transform: translate3d(-300px, 0, 0);
+    -moz-transform: translate3d(-300px, 0, 0);
+    -ms-transform: translate3d(-300px, 0, 0);
+    -o-transform: translate3d(-300px, 0, 0);
+    transform: translate3d(-300px, 0, 0);
 }
 
 /* Elements Transitions */
@@ -102,9 +102,9 @@
 
 /* Element is open: container elements slide out */
 .no-csstransforms3d > .offside-js--is-left .offside-sliding-element {
-    right: -200px;
+    right: -300px;
 }
 
 .no-csstransforms3d > .offside-js--is-right .offside-sliding-element {
-    left: -200px;
+    left: -300px;
 }
