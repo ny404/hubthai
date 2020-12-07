@@ -4,7 +4,7 @@ h1 { font-size: 2.5em; line-height: 1.2em;}
 h2 { font-size: 2em; line-height: 1.2em; }
 h3 { font-size: 1.6em; }
 a { text-decoration: none; color: #fff;}
-a:hover, a:active, a:focus { /*color: #F1D302;*/ border-bottom: 1px solid; }
+a:hover, a:active, a:focus { /*color: #F1D302;*/ }
 .branding { width: 150px; height: 150px; border-radius: 75px; margin: auto; display: block; }
 .branding-menu { width: 100%; margin: auto; display: block; }
 header { 
@@ -16,7 +16,7 @@ header {
 	flex-direction: column;
 }
 #nav-menu { background: #20BF55; font-size: 1.2em; }
-#nav-btn { width: auto; position: fixed; z-index: 500; top: 0; left: 0; font-size: 1.2em; color: #fff; background: #FE5F55; margin: 15px; 
+#nav-btn { width: auto; position: fixed; z-index: 500; top: 0; left: 0; font-size: 1.2em; color: #fff; background: /*#FE5F55*/#20BF55; margin: 15px; 
 }
 .site-overlay {
     z-index: 1;
@@ -41,6 +41,7 @@ header {
     -webkit-transition-delay: delay 0s;
     -o-transition-delay: delay 0s;
     transition-delay: delay 0s;
+    cursor: url("../images/close.png") 16 16, pointer;
 }
 #currentGame { width: 240px; height: 240px; border-radius: 24px; box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -87,7 +88,7 @@ button {
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
     /*margin: 5% auto;*/
-    display: block;
+    display: inline-block;
 }
 button:hover { opacity: 0.8; }
 
@@ -138,6 +139,7 @@ section:after { content:''; display: table; }
 }
 ul { list-style: none; padding: 10%; margin: 0; }
 li { line-height: 1.6em; padding: 5%;}
+li a { width: 100%; display: inline-block; }
 li.release:before {
 	font-family: "FontAwesome";
 	position: relative;
@@ -166,6 +168,7 @@ li.website:before {
 	margin-right: 10.5px;
 }
 i.fas { margin: 0 5px; }
+i.fa-mobile-alt { margin: 0 6.5px; }
 
 i.fa-windows, i.fa-desktop, i.fa-apple, i.fa-android, i.fa-linux, i.fa-playstation, i.fa-xbox, i.switch { margin: 0 5px; }
 i.switch { background: url(../images/nintendo-switch.png); width: 14px; height: 14px; }
@@ -181,4 +184,5 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	.game:hover { transform: none; box-shadow: none; }
 	.col-xs { width: 100%; }
 	ul.footer-links { text-align: center; }
+	#nav-btn { top: auto; left: 50%; bottom: 0; margin-left: -37.5%; width: 75%;  }
 }
