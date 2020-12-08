@@ -108,3 +108,17 @@
 .no-csstransforms3d > .offside-js--is-right .offside-sliding-element {
     left: -300px;
 }
+
+@media screen and (max-width: 767px){
+    .offside { width: 200px; }
+    .offside, .offside--left { left: -200px; }
+    .offside--left.is-open,
+    .offside-js--is-left .offside-sliding-element {
+        -webkit-transform: translate3d(200px, 0, 0);
+        -moz-transform: translate3d(200px, 0, 0);
+        -ms-transform: translate3d(200px, 0, 0);
+        -o-transform: translate3d(200px, 0, 0);
+        transform: translate3d(200px, 0, 0);
+    }
+    .no-csstransforms3d > .offside-js--is-left .offside-sliding-element { right: -200px; }
+}

@@ -20,7 +20,7 @@ header {
 }
 .site-overlay {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -29,6 +29,7 @@ header {
     visibility: hidden;
     opacity: 0;
     cursor: pointer;
+    height: 100vh;
 
     -webkit-transition: visibility 0s ease, opacity .2s ease;
     -moz-transition: visibility 0s ease, opacity .2s ease;
@@ -139,6 +140,9 @@ section:after { content:''; display: table; }
 }
 ul { list-style: none; padding: 10%; margin: 0; }
 li { line-height: 1.6em; padding: 5%;}
+ul.secondary { font-size: 0.8em; text-align: center; }
+ul.secondary li { display: inline-block; }
+ul.secondary li a { text-decoration: underline; }
 li a { width: 100%; display: inline-block; }
 li.release:before {
 	font-family: "FontAwesome";
@@ -167,8 +171,9 @@ li.website:before {
 	content: '\f0c1';
 	margin-right: 10.5px;
 }
-i.fas { margin: 0 5px; }
-i.fa-mobile-alt { margin: 0 6.5px; }
+i.fas { margin: 0 6.5px; }
+i.fa-mobile-alt { margin: 0 8.5px; }
+i.fa-images { margin: 0 3.5px; }
 
 i.fa-windows, i.fa-desktop, i.fa-apple, i.fa-android, i.fa-linux, i.fa-playstation, i.fa-xbox, i.switch { margin: 0 5px; }
 i.switch { background: url(../images/nintendo-switch.png); width: 14px; height: 14px; }
