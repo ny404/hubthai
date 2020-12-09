@@ -21,7 +21,7 @@ header {
 	flex-wrap: wrap;
 }
 #nav-menu { background: #20BF55; font-size: 1.2em; }
-#nav-btn { width: auto; position: fixed; z-index: 500; top: 0; left: 0; font-size: 1.2em; color: #fff; background: /*#FE5F55*/#20BF55; margin: 15px; 
+#nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; color: #fff; background: /*#FE5F55*/#20BF55; margin: 15px; 
 }
 .site-overlay {
     z-index: 1;
