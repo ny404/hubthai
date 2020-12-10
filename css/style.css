@@ -128,12 +128,12 @@ section h2 { width: 100%; }
 .col-9 { width: 75%; background: rgba(255,255,255,0.9); }
 .col-12 { width: 100%; }
 
-ul.tabs { padding: 0; text-align: center; }
+ul.tabs { padding: 0; }
 ul.tabs li {
 	display: inline-block;
 	padding: 0;
 }
-ul.tabs button { width: auto; margin: 5% auto; }
+ul.tabs button { width: auto; background: none;}
 
 .food-item { 
 	width: 31%;
