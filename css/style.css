@@ -115,6 +115,7 @@ section {
 	flex-wrap: wrap;
 }
 section:after { content:''; display: table; }
+section:first-child { padding-bottom: 0; }
 
 section h2 { width: 100%; }
 
@@ -126,6 +127,13 @@ section h2 { width: 100%; }
 .col-8 { width: 66.66666667%; }
 .col-9 { width: 75%; background: rgba(255,255,255,0.9); }
 .col-12 { width: 100%; }
+
+ul.tabs { padding: 0; text-align: center; }
+ul.tabs li {
+	display: inline-block;
+	padding: 0;
+}
+ul.tabs button { width: auto; margin: 5% auto; }
 
 .food-item { 
 	width: 31%;
