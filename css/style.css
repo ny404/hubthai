@@ -119,7 +119,7 @@ section:after { content:''; display: table; }
 section:first-child { padding-bottom: 0; }
 nav.scroll-wrapper { padding: 0 5%; background: #F0EDED; }
 
-section h2 { width: 100%; }
+section h2, p.subheading { width: 100%; text-align: center; }
 
 .col-1 { width: 8.33333333%; }
 .col-2 { width: 16.66666667%; }
@@ -178,7 +178,8 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #20BF55; }
 
 .price { text-align: right; }
 .preview { width: 100%; display: block; }
-.tags { background: #192739; display: inline-block; padding: 2%; margin-right: 5px; font-size: 0.8em; }
+.tags { display: inline-block; margin-right: 5px; font-size: 0.5em; vertical-align: top; }
+.spicy { color: #940606 }
 .content {
 	padding: 5%;
 	/*background: #293341;*/
