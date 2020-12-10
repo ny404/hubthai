@@ -117,7 +117,7 @@ section {
 }
 section:after { content:''; display: table; }
 section:first-child { padding-bottom: 0; }
-section.scroll-wrapper { padding: 2% 5%; background: #F0EDED; }
+nav.scroll-wrapper { padding: 0 5%; background: #F0EDED; }
 
 section h2 { width: 100%; }
 
@@ -130,7 +130,7 @@ section h2 { width: 100%; }
 .col-9 { width: 75%; background: rgba(255,255,255,0.9); }
 .col-12 { width: 100%; }
 
-ul.tabs { width: 100%; padding: 0; display: flex; flex-wrap: nowrap; overflow-x: scroll; -webkit-overflow-scrolling: touch; }
+ul.tabs { max-width: 1366px; width: 100%; padding: 0; margin: auto; display: flex;  flex-wrap: nowrap; overflow-x: scroll; -webkit-overflow-scrolling: touch; }
 ul.tabs::-webkit-scrollbar { 
 	display: none;
 	-ms-overflow-style: none;  /* IE and Edge */
@@ -141,8 +141,12 @@ ul.tabs li {
 	display: inline-block;
 	padding: 0;
 }
-ul.tabs button { width: auto; background: none; border-radius: 0;}
+ul.tabs button { width: auto; padding: 20px; background: none; border-radius: 0; border-top: 3px solid transparent; border-bottom: 3px solid transparent;}
 ul.tabs button:focus { outline: none; border-bottom: 3px solid #20BF55; }
+
+[role="tabpanel"] {
+	outline: none;
+}
 
 .food-item { 
 	width: 31%;
