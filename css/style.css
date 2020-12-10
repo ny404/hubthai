@@ -21,7 +21,7 @@ header {
 	flex-wrap: wrap;
 }
 #nav-menu { background: #20BF55; font-size: 1.2em; height: 100vh;}
-#nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; color: #fff; background: /*#FE5F55*/#20BF55; margin: 15px; 
+#nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; color: #fff; margin: 15px; 
 }
 .site-overlay {
     z-index: 1;
@@ -84,6 +84,7 @@ main {  }
 button { 
 	width: 150px;
 	padding: 15px;
+	background: /*#FE5F55*/#20BF55;
 	border: none;
 	border-radius: 5px;
 	font-size: inherit;
@@ -116,6 +117,7 @@ section {
 }
 section:after { content:''; display: table; }
 section:first-child { padding-bottom: 0; }
+section.scroll-wrapper { padding: 2% 5%; background: #F0EDED; }
 
 section h2 { width: 100%; }
 
@@ -128,14 +130,14 @@ section h2 { width: 100%; }
 .col-9 { width: 75%; background: rgba(255,255,255,0.9); }
 .col-12 { width: 100%; }
 
-ul.tabs { width: 100%; padding: 0; display: flex; flex-wrap: nowrap; overflow-x: scroll;}
+ul.tabs { width: 100%; padding: 0; display: flex; flex-wrap: nowrap; overflow-x: scroll; -webkit-overflow-scrolling: touch; }
 ul.tabs li {
 	flex: 0 0 auto;
 	display: inline-block;
 	padding: 0;
 }
 ul.tabs button { width: auto; background: none; border-radius: 0;}
-ul.tabs button:focus { outline: none; border-bottom: 3px solid green; }
+ul.tabs button:focus { outline: none; border-bottom: 3px solid #20BF55; }
 
 .food-item { 
 	width: 31%;
