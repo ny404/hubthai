@@ -131,6 +131,11 @@ section h2 { width: 100%; }
 .col-12 { width: 100%; }
 
 ul.tabs { width: 100%; padding: 0; display: flex; flex-wrap: nowrap; overflow-x: scroll; -webkit-overflow-scrolling: touch; }
+ul.tabs::-webkit-scrollbar { 
+	display: none;
+	-ms-overflow-style: none;  /* IE and Edge */
+ 	scrollbar-width: none;  /* Firefox */
+}
 ul.tabs li {
 	flex: 0 0 auto;
 	display: inline-block;
