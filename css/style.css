@@ -51,6 +51,15 @@ header {
 }
 
 main { background: #f7f9f9; }
+footer { 
+	background: #1a6730;
+	color: #fff;
+	padding: 2.5% 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
 button { 
 	width: 150px;
 	padding: 15px;
@@ -192,7 +201,7 @@ i.fa-images { margin: 0 3.5px; }
 
 i.fa-windows, i.fa-desktop, i.fa-apple, i.fa-android, i.fa-linux, i.fa-playstation, i.fa-xbox, i.switch { margin: 0 5px; }
 i.switch { background: url(../images/nintendo-switch.png); width: 14px; height: 14px; }
-footer { font-size: 0.8em; font-weight: ; background: #1E2F45; color: #79beda; }
+
 ul.footer-links { text-align: right; }
 ul.footer-links li { display: inline-block; padding: 0 1em; }
 
