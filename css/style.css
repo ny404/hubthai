@@ -1,4 +1,4 @@
-body { font-size: 1em; font-family: 'Roboto', sans-serif; line-height: 1.6em; padding: 0; margin: 0; background: #f7f9f9; }
+body { font-size: 1em; font-family: 'Roboto', sans-serif; line-height: 1.6em; padding: 0; margin: 0; }
 h1, h2, h3 { font-family: 'Titillium Web', sans-serif; margin-top: 0; text-align: center;}
 h1 { font-size: 2.5em; line-height: 1.2em;}
 h2 { font-size: 2em; line-height: 1.2em; }
@@ -50,7 +50,7 @@ header {
     cursor: url("../images/close.png") 16 16, pointer;
 }
 
-main {  }
+main { background: #f7f9f9; }
 button { 
 	width: 150px;
 	padding: 15px;
@@ -114,7 +114,7 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #20BF55; }
 	outline: none;
 }
 
-.divider { width: 95%; margin-top: 5%; text-align: center; }
+.divider { width: 90%; margin: 5%; text-align: center; }
 .divider img { width: 320px; height: 84px; }
 
 .food-item { 
