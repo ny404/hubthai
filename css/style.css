@@ -8,9 +8,8 @@ a:focus, button:focus { outline: 3px solid black; }
 .branding { width: 150px; height: 150px; border-radius: 75px; margin: auto; display: block; }
 .branding-menu { width: 300px; height: 300px; margin: auto; display: block; }
 header { 
-	background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739;
-	background-size: cover; 
-	height: 90vh;
+	background-color: #192739;
+	height: 85vh;
 	width: auto;
 	margin: auto;
 	/*padding: 2%;*/
@@ -20,6 +19,8 @@ header {
 	align-items: center;
 	flex-wrap: wrap;
 }
+.header-cover { background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739; background-size: cover; }
+.drinks-cover { background: url('../images/hub-thai-drinks-cover.jpg') top center no-repeat #192739; background-size: cover;  }
 #nav-menu { background: #20BF55; font-size: 1.2em; }
 #nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; color: #fff; margin: 15px; 
 }
@@ -169,14 +170,16 @@ ul.secondary { font-size: 0.8em; text-align: center; }
 ul.secondary li { display: inline-block; }
 ul.secondary li a { text-decoration: underline; }
 li a { width: 100%; display: inline-block; }
+
 i.fas { margin: 0 6.5px; }
-i.fa-mobile-alt { margin: 0 8.5px; }
+i.fa-mobile-alt, i.fa-wine-glass-alt { margin: 0 8.5px; }
 i.fa-images { margin: 0 3.5px; }
 
 ul.footer-links { text-align: right; }
 ul.footer-links li { display: inline-block; padding: 0 1em; }
 
 @media screen and (max-width: 767px){
+	header { height: 100vh; }
 	.branding-menu { width: 200px; height: 200px; }
 	.food-item { margin: 2%; }
 	.divider img { width: 240px; height: 63px; }
