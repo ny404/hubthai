@@ -20,7 +20,7 @@ header {
 	align-items: center;
 	flex-wrap: wrap;
 }
-#nav-menu { background: #20BF55; font-size: 1.2em; height: 100vh;}
+#nav-menu { background: #20BF55; font-size: 1.2em; }
 #nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; color: #fff; margin: 15px; 
 }
 .site-overlay {
