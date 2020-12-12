@@ -21,7 +21,7 @@ header {
 }
 .header-cover { background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739; background-size: cover; }
 .drinks-cover { background: url('../images/hub-thai-drinks-cover.jpg') top center no-repeat #192739; background-size: cover;  }
-#nav-menu { background: #20BF55; font-size: 1.2em; }
+#nav-menu { background: #F0EDED; font-size: 1.2em; }
 #nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; color: #fff; margin: 15px; 
 }
 .site-overlay {
@@ -166,6 +166,7 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #20BF55; }
 }
 ul { list-style: none; padding: 10%; margin: 0; }
 li { line-height: 1.6em; padding: 5%;}
+ul.primary li a { color: #272d2d; }
 ul.secondary { font-size: 0.8em; text-align: center; }
 ul.secondary li { display: inline-block; }
 ul.secondary li a { text-decoration: underline; }
