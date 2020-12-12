@@ -169,7 +169,7 @@ li { line-height: 1.6em; padding: 5%;}
 ul.primary li a { color: #272d2d; }
 ul.secondary { font-size: 0.8em; text-align: center; }
 ul.secondary li { display: inline-block; }
-ul.secondary li a { text-decoration: underline; }
+ul.secondary li a { text-decoration: underline; color: #272d2d; }
 li a { width: 100%; display: inline-block; }
 
 i.fas { margin: 0 6.5px; }
