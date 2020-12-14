@@ -163,7 +163,6 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #20BF55; }
 .spicy { color: #ad0303; }
 .content {
 	padding: 5%;
-	/*background: #293341;*/
 }
 ul { list-style: none; padding: 10%; margin: 0; }
 li { line-height: 1.6em; padding: 5%;}
