@@ -19,7 +19,8 @@ header {
 	align-items: center;
 	flex-wrap: wrap;
 }
-.header-cover { background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739; background-size: cover; }
+.index-cover { background: url('../images/hub-thai-index-cover.jpg') top center no-repeat #192739; background-size: cover; }
+.menu-cover { background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739; background-size: cover; }
 .drinks-cover { background: url('../images/hub-thai-drinks-cover.jpg') top center no-repeat #192739; background-size: cover;  }
 #nav-menu { background: #F0EDED; font-size: 1.2em; }
 #nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; color: #fff; margin: 15px; 
@@ -92,6 +93,12 @@ section {
 	flex-wrap: wrap;
 }
 section:after { content:''; display: table; }
+section.about-us { padding: 0; max-width: 100%; align-items: center; }
+.about-img { 
+	background: url('../images/hub-thai-about-us.jpg') center center no-repeat;
+	background-size: cover;
+	height: 75vh;
+}
 /*section:first-child { padding-bottom: 0; }*/
 .justify-reset { justify-content: initial; display: block; }
 nav.scroll-wrapper { padding: 0 5%; background: #F0EDED; }
@@ -182,6 +189,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 @media screen and (max-width: 767px){
 	header { height: 100vh; }
 	.branding-menu { width: 200px; height: 200px; }
+	.about-img { height: 50vh; }
 	.food-item { margin: 2%; }
 	.divider img { width: 240px; height: 63px; }
 	.col-xs { width: 100%; }
