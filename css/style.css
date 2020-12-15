@@ -97,13 +97,8 @@ section {
 }
 section:after { content:''; display: table; }
 section.about-us, section.find-us { padding: 0; max-width: 100%; align-items: center; }
-.about-img { 
-	background: url('../images/hub-thai-about-us.jpg') center center no-repeat;
-	background-size: cover;
-	height: 75vh;
-}
-.map-img { 
-	background: url('../images/hub-thai-map.jpg') center center no-repeat;
+.about-img, .map-img { 
+	background: center center no-repeat;
 	background-size: cover;
 	height: 75vh;
 }
