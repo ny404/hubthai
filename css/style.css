@@ -62,7 +62,7 @@ footer {
 	justify-content: center;
 	text-align: center;
 }
-button, a.map-button { 
+button { 
 	width: 150px;
 	padding: 15px;
 	background: #20BF55;
@@ -79,8 +79,22 @@ button, a.map-button {
     /*margin: 5% auto;*/
     display: inline-block;
 }
+a.map-button { 
+	width: 150px;
+	padding: 15px;
+	background: #20BF55;
+	color: #fff;
+	margin: 5% auto;
+	display: block;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
 button:hover, a.map-button:hover { opacity: 0.8; }
-a.map-button { margin: 15px 0; }
 
 .full-height { height: 100vh; }
 
@@ -100,9 +114,9 @@ section.about-us, section.find-us { padding: 0; max-width: 100%; align-items: ce
 .about-img, .map-img { 
 	background: center center no-repeat;
 	background-size: cover;
-	height: 75vh;
+	height: 85vh;
 }
-section.find-us address { text-align: center; padding: 2.5%; }
+section.find-us address { text-align: center; }
 table.business-hours th {
   text-align: right; 
 }
