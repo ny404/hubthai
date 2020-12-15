@@ -134,7 +134,7 @@ ul.tabs li {
 	display: inline-block;
 	padding: 0;
 }
-ul.tabs button { width: auto; padding: 20px; background: none; border-radius: 0; border-top: 3px solid transparent; border-bottom: 3px solid transparent;}
+ul.tabs button { width: auto; padding: 20px; background: none; border-radius: 0; border-top: 3px solid transparent; border-bottom: 3px solid transparent; color: #272d2d;}
 ul.tabs button:focus { outline: none; border-bottom: 3px solid #20BF55; }
 
 [role="tabpanel"] {
