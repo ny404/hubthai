@@ -12,4 +12,4 @@
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5, Javascript
-    Modernizr, Normalize.css
+    Modernizr, Normalize.css, Polyfill
