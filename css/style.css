@@ -79,7 +79,7 @@ button {
     /*margin: 5% auto;*/
     display: inline-block;
 }
-a.map-button { 
+a.map-button, a.cater-button { 
 	width: 150px;
 	padding: 15px;
 	background: #20BF55;
@@ -94,6 +94,7 @@ a.map-button {
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
 }
+a.cater-button { margin: 2.5% auto 0 auto; }
 button:hover, a.map-button:hover { opacity: 0.8; }
 
 .full-height { height: 100vh; }
@@ -205,9 +206,15 @@ ul.secondary li { display: inline-block; }
 ul.secondary li a { text-decoration: underline; color: #272d2d; }
 li a { width: 100%; display: inline-block; }
 
-i.fas { margin: 0 6.5px; }
-i.fa-mobile-alt, i.fa-wine-glass-alt { margin: 0 8.5px; }
-i.fa-images { margin: 0 3.5px; }
+/*i.fa-solid { margin: 0 6.5px; }
+i.fa-mobile-alt, i.fa-wine-glass-alt, i.fa-bowl-rice { margin: 0 8.5px; }
+i.fa-images { margin: 0 3.5px; }*/
+
+.svg-inline--fa { margin: 0 6.5px; }
+.fa-wine-glass { margin: 0 9px; }
+.fa-bowl-rice { margin-right: 9px; }
+.fa-phone { margin: 0 5.5px; }
+.fa-bag-shopping { margin: 0 7px; }
 
 ul.footer-links { text-align: right; }
 ul.footer-links li { display: inline-block; padding: 0 1em; }
